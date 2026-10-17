@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <title>VPN ود فيصل</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">W</div>
+        <div class="brand-text">
+          <h1>ود فيصل VPN</h1>
+          <p>اتصالك، تحت سيطرتك</p>
+        </div>
+      </div>
+      <span class="version">الإصدار 1.0</span>
+    </header>
+
+    <section class="welcome">
+      <p class="eyebrow">مرحباً بك</p>
+      <h2>اتصل بأمان</h2>
+      <p>جهّز اتصالك بخادم VPN خاص بك.</p>
+    </section>
+
+    <section class="connection-card">
+      <div class="status-icon" id="statusIcon">🔒</div>
+
+      <h2 id="connectionTitle">غير متصل</h2>
+      <p id="connectionStatus" role="status" aria-live="polite">
+        لم يتم إنشاء اتصال VPN بعد
+      </p>
+
+      <div class="connection-details">
+        <div class="detail">
+          <span>الخادم</span>
+          <strong id="serverName">غير مُعدّ</strong>
+        </div>
+        <div class="detail">
+          <span>مدة الاتصال</span>
+          <strong id="connectionTime">00:00:00</strong>
+        </div>
+      </div>
+
+      <button
+        id="connectButton"
+        class="connect-button"
+        type="button"
+      >
+        إعداد الاتصال
+      </button>
+
+      <p class="notice" id="connectionNotice">
+        يلزم إعداد خادم VPN وملف الاتصال قبل الاتصال.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>إعدادات الخادم</h3>
+
+      <div class="setting-card">
+        <div class="setting-icon">🌐</div>
+        <div class="setting-info">
+          <strong>خادم VPN</strong>
+          <p id="serverDescription">لم تتم إضافة خوادم بعد</p>
+        </div>
+        <span class="setting-arrow">‹</span>
+      </div>
+
+      <div class="setting-card">
+        <div class="setting-icon">🛡️</div>
+        <div class="setting-info">
+          <strong>بروتوكول الاتصال</strong>
+          <p>WireGuard — بعد إعداد المحرك</p>
+        </div>
+        <span class="protocol-badge">WG</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>الأمان والخصوصية</h3>
+
+      <div class="privacy-card">
+        <span class="privacy-icon">🔐</span>
+        <div>
+          <strong>خصوصيتك مهمة</strong>
+          <p>
+            لن يعرض التطبيق حالة «متصل» إلا بعد التحقق
+            من اتصال النفق الفعلي.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>ود فيصل VPN</p>
+      <p>اتصل فقط بالخوادم التي تملك تصريح استخدامها.</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
